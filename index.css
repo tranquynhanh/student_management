@@ -1,0 +1,67 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.form_group {
+    width: 90%;
+}
+
+.form_control {
+    width: 90%;
+    padding: 5px;
+}
+
+.form_group.button {
+    width: 83%;
+}
+
+.form-group {
+    width: 85%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-8 {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.row h3 {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.col-4 {
+    width: 40%;
+    padding-right: 10px;
+}
+
+#Confirm {
+    background-color: rgb(69, 211, 37);
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
+
+#Confirm:hover {
+    background-color: rgb(0, 137, 9);
+    color: white;
+}
+

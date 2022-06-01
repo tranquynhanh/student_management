@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h3>Student Management</h3>
+                <div class="form_group">
+                    <p>Student ID</p>
+                    <input id="studentID" class="form_control" />
+                    <small id="error_studentID" style="color: red;"></small>
+                    <small id="error_studentID_length" style="color: red;"></small>
+                </div>
+                <div class="form_group">
+                    <p>Student name</p>
+                    <input id="studentName" class="form_control" />
+                    <small id="error_studentName" style="color: red;"></small>
+                    <small id="error_studentName_letter" style="color: red;"></small>
+                </div>
+                <div class="form_group">
+                    <p>Student Condition</p>
+                    <select id="studentCondition" class="form_control" >
+                        <option>Khó khăn</option>
+                        <option>Bình thường</option>
+                    </select>
+                    <small id="error_studentCondition" style="color: red;"></small>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Math</p>
+                            <input type="text" id="math" class="form_control">
+                            <small id="error_math" style="color: red;"></small>
+                            <small id="error_math_number" style="color: red;"></small>
+                            <small id="error_math_value" style="color: red;"></small>
+                        </div>
+                        <div class="col-4">
+                            <p>Physic</p>
+                            <input type="text" id="physic" class="form_control">
+                            <small id="error_physic" style="color: red;"></small>
+                            <small id="error_physic_number" style="color: red;"></small>
+                            <small id="error_physic_value" style="color: red;"></small>
+                        </div>
+                        <div class="col-4">
+                            <p>Chemistry</p>
+                            <input type="text" id="chemistry" class="form_control">
+                            <small id="error_chemistry" style="color: red;"></small>
+                            <small id="error_chemistry_number" style="color: red;"></small>
+                            <small id="error_chemistry_value" style="color: red;"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <p>Point Training</p>
+                    <input id="pointTraining" class="form_control" />
+                    <small id="error_pointTraining" style="color: red;"></small>
+                    <small id="error_pointTraining_number" style="color: red;"></small>
+                    <small id="error_pointTraining_value" style="color: red;"></small>
+                </div>
+
+                <div class="form_group button">
+                    <button id="Confirm">Confirm</button>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h3>Student Information</h3>
+                <p>Student name <span id="studentName_info" style="font-weight: bold;"></span></p>
+                <p>Student ID <span id="studentID_info" style="font-weight: bold;"></span></p>
+                <p>Student condition <span id="studentCondition_info" style="font-weight: bold;"></span></p>
+                <p>Average mark <span id="averageMark" style="font-weight: bold;"></span></p>
+                <p>Classification of average mark <span id="classification" style="font-weight: bold;"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./Validation.js"></script>
+    <script src="./student.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
